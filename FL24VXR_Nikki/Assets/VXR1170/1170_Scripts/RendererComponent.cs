@@ -4,12 +4,13 @@ using UnityEngine;
 
 public class RendererComponent : MonoBehaviour
 {
-    // Declare and call renderer component
-    public Renderer theRenderer;
+    // Declare variable
+    private Renderer theRenderer;
 
     // Start is called before the first frame update
     void Start()
     {
+        //Call Renderer component
         theRenderer = GetComponent<Renderer>();
     }
 
@@ -20,13 +21,13 @@ public class RendererComponent : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.UpArrow))
         {
-            theRenderer.material.SetColor("_Color", Color.yellow);
+            theRenderer.material.color = Color.yellow;
             theRenderer.material.SetFloat("_Metallic", 0.9f);
         }
 
         if (Input.GetKeyDown(KeyCode.DownArrow))
         {
-            theRenderer.material.SetColor("_Color", Color.white);
+            theRenderer.material.color = Color.gray;
             theRenderer.material.SetFloat("_Metallic", 0f);
         }
         // The renderer makes the object invisible
