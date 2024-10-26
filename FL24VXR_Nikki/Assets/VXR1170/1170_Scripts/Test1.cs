@@ -24,7 +24,7 @@ public class Test1 : MonoBehaviour
     // variables declared inside a class but outside a method is known as fields or member variables
     // these variables are accessible to all methods within the class and sometimes other classes depending on their access modifier (public, or private)
 
-    private int score = 0;
+    //private int score = 0;
     
     
 

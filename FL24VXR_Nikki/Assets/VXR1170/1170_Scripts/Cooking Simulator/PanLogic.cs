@@ -1,9 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 using TMPro;
+using UnityEngine;
 
-public class Timer : MonoBehaviour
+public class PanLogic : MonoBehaviour //This class manages the timer of game play and checks how fast the player selects ingredients and this affects the score
 {
     [SerializeField]
     private float timerValue = 30;
@@ -25,6 +25,6 @@ public class Timer : MonoBehaviour
             timerText.text = "Time:" + (int)timerValue;
             yield return null;
         }
-        timerText.text = "Timer: 0";
+        timerText.text = "Time: 0";
     }
 }
