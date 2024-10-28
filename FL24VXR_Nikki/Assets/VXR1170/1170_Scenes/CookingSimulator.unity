@@ -240,11 +240,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 205059577}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: db30380f8f07a3540b30d51a2f61805b, type: 3}
+  m_Script: {fileID: 11500000, guid: b5c42bebc8609e34bb131eed3b1c3f78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timerValue: 30
-  timerText: {fileID: 0}
 --- !u!1 &418457183
 GameObject:
   m_ObjectHideFlags: 0
@@ -459,6 +457,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5c42bebc8609e34bb131eed3b1c3f78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &555177296
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 555177286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02a15429279066b4c90bb6ce18c12b99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  usedIngedients: 
+  ingredientIDs: 0000000001000000020000000300000004000000
+  gameStarted: 0
+  chosenRecipeID: 0
 --- !u!1 &587338930 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4887077299454186987, guid: 660db8636b743a84991585c4f1e7c6b0,
@@ -491,6 +505,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   usedIngedients: 
   ingredientIDs: 0000000001000000020000000300000004000000
+  gameStarted: 0
+  chosenRecipeID: 0
 --- !u!1 &651762676
 GameObject:
   m_ObjectHideFlags: 0
@@ -500,6 +516,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 651762677}
+  - component: {fileID: 651762678}
   m_Layer: 0
   m_Name: RecipeLoc1
   m_TagString: Untagged
@@ -522,6 +539,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &651762678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 651762676}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02a15429279066b4c90bb6ce18c12b99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  usedIngedients: 
+  ingredientIDs: 0000000001000000020000000300000004000000
+  gameStarted: 0
+  chosenRecipeID: 0
 --- !u!1 &906818404
 GameObject:
   m_ObjectHideFlags: 0
@@ -666,7 +699,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1003199675}
   - component: {fileID: 1003199676}
-  - component: {fileID: 1003199677}
   m_Layer: 0
   m_Name: RecipeManager
   m_TagString: Untagged
@@ -701,22 +733,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db30380f8f07a3540b30d51a2f61805b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  recipeManager: {fileID: 0}
   timerValue: 30
   timerText: {fileID: 1458909532}
---- !u!114 &1003199677
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1003199674}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 02a15429279066b4c90bb6ce18c12b99, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  usedIngedients: 000000000000000000000000
-  ingredientIDs: 0000000001000000020000000300000004000000
 --- !u!1 &1093151744
 GameObject:
   m_ObjectHideFlags: 0
@@ -853,6 +872,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   usedIngedients: 
   ingredientIDs: 0000000001000000020000000300000004000000
+  gameStarted: 0
+  chosenRecipeID: 0
 --- !u!1 &1284369097
 GameObject:
   m_ObjectHideFlags: 0
@@ -862,6 +883,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1284369098}
+  - component: {fileID: 1284369099}
   m_Layer: 0
   m_Name: RecipeLoc2
   m_TagString: Untagged
@@ -884,6 +906,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1284369099
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1284369097}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02a15429279066b4c90bb6ce18c12b99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  usedIngedients: 
+  ingredientIDs: 0000000001000000020000000300000004000000
+  gameStarted: 0
+  chosenRecipeID: 0
 --- !u!1 &1284643327
 GameObject:
   m_ObjectHideFlags: 0
@@ -893,6 +931,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1284643328}
+  - component: {fileID: 1284643329}
   m_Layer: 0
   m_Name: RecipeLoc3
   m_TagString: Untagged
@@ -915,6 +954,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1284643329
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1284643327}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02a15429279066b4c90bb6ce18c12b99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  usedIngedients: 
+  ingredientIDs: 0000000001000000020000000300000004000000
+  gameStarted: 0
+  chosenRecipeID: 0
 --- !u!1 &1337025854 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7164118149048818691, guid: 099b645f4472faf428da5f78af441704,
@@ -933,6 +988,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5c42bebc8609e34bb131eed3b1c3f78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1337025864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1337025854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02a15429279066b4c90bb6ce18c12b99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  usedIngedients: 
+  ingredientIDs: 0000000001000000020000000300000004000000
+  gameStarted: 0
+  chosenRecipeID: 0
 --- !u!1 &1458909530
 GameObject:
   m_ObjectHideFlags: 0
@@ -1130,6 +1201,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   usedIngedients: 
   ingredientIDs: 0000000001000000020000000300000004000000
+  gameStarted: 0
+  chosenRecipeID: 0
 --- !u!1 &1657821489
 GameObject:
   m_ObjectHideFlags: 0
@@ -1416,6 +1489,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4227876643353976407, guid: 660db8636b743a84991585c4f1e7c6b0,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4858319500006263227, guid: 660db8636b743a84991585c4f1e7c6b0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1471,6 +1549,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GreenCube
       objectReference: {fileID: 0}
+    - target: {fileID: 4887077299454186987, guid: 660db8636b743a84991585c4f1e7c6b0,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1496,6 +1579,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: RedCube
+      objectReference: {fileID: 0}
+    - target: {fileID: 2033478627761179631, guid: f065c6bbf49749b45b1971002f818b1a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4341537788274955761, guid: f065c6bbf49749b45b1971002f818b1a,
         type: 3}
@@ -1547,6 +1635,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9144858416779722166, guid: f065c6bbf49749b45b1971002f818b1a,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1555,6 +1648,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 555177291}
+    - targetCorrespondingSourceObject: {fileID: 2033478627761179631, guid: f065c6bbf49749b45b1971002f818b1a,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 555177296}
   m_SourcePrefab: {fileID: 100100000, guid: f065c6bbf49749b45b1971002f818b1a, type: 3}
 --- !u!1001 &2375825598352646575
 PrefabInstance:
@@ -1619,6 +1716,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: OrangeCube
       objectReference: {fileID: 0}
+    - target: {fileID: 7164118149048818691, guid: 099b645f4472faf428da5f78af441704,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8093866277013061053, guid: 099b645f4472faf428da5f78af441704,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1627,6 +1734,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1337025859}
+    - targetCorrespondingSourceObject: {fileID: 7164118149048818691, guid: 099b645f4472faf428da5f78af441704,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1337025864}
   m_SourcePrefab: {fileID: 100100000, guid: 099b645f4472faf428da5f78af441704, type: 3}
 --- !u!1001 &4386132799065922844
 PrefabInstance:
@@ -1644,12 +1755,12 @@ PrefabInstance:
     - target: {fileID: 2967323157109302243, guid: 43aad83a17a172545b7d9e40e05fd86c,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0
+      value: 0.12
       objectReference: {fileID: 0}
     - target: {fileID: 2967323157109302243, guid: 43aad83a17a172545b7d9e40e05fd86c,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.78
+      value: -2.204904
       objectReference: {fileID: 0}
     - target: {fileID: 2967323157109302243, guid: 43aad83a17a172545b7d9e40e05fd86c,
         type: 3}
@@ -1696,6 +1807,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7359056253445713136, guid: 43aad83a17a172545b7d9e40e05fd86c,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1717,10 +1833,20 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4427632209651201017, guid: adf7a50772a33fa47ba2b093f6d8af6b,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4920535552585778916, guid: adf7a50772a33fa47ba2b093f6d8af6b,
         type: 3}
       propertyPath: m_Name
       value: YellowSphere
+      objectReference: {fileID: 0}
+    - target: {fileID: 4920535552585778916, guid: adf7a50772a33fa47ba2b093f6d8af6b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5900122343229474179, guid: adf7a50772a33fa47ba2b093f6d8af6b,
         type: 3}
@@ -1730,12 +1856,12 @@ PrefabInstance:
     - target: {fileID: 5900122343229474179, guid: adf7a50772a33fa47ba2b093f6d8af6b,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.12
       objectReference: {fileID: 0}
     - target: {fileID: 5900122343229474179, guid: adf7a50772a33fa47ba2b093f6d8af6b,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.78
+      value: -2.204904
       objectReference: {fileID: 0}
     - target: {fileID: 5900122343229474179, guid: adf7a50772a33fa47ba2b093f6d8af6b,
         type: 3}
@@ -1801,8 +1927,8 @@ SceneRoots:
   - {fileID: 418457184}
   - {fileID: 1463049089}
   - {fileID: 467896112}
-  - {fileID: 4386132799065922844}
-  - {fileID: 1971641976034628294}
-  - {fileID: 2375825598352646575}
   - {fileID: 1886820405679107003}
+  - {fileID: 2375825598352646575}
+  - {fileID: 1971641976034628294}
+  - {fileID: 4386132799065922844}
   - {fileID: 6596608192714500966}

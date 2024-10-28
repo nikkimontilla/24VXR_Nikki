@@ -5,6 +5,10 @@ using UnityEngine;
 
 public class PanLogic : MonoBehaviour //This class manages the timer of game play and checks how fast the player selects ingredients and this affects the score
 {
+    //reference to allow instantiation 
+    [SerializeField]
+    RecipeManager recipeManager;
+
     [SerializeField]
     private float timerValue = 30;
 

@@ -8,19 +8,19 @@ public class Recipe
     //Call this Recipes class in the RecipeManager to create randomized recipes
 
     public string recipeName;
-    public int id;
+    public int recipeID;
     public int minCookTime;
     public int maxCookTime;
-    public List<int> RandomIngredientList;
+    public List<int> ingredientIDs = new List<int>() { 0, 1, 2, 3, 4 };
     public int recipeCompletionPoints;
 
-    public Recipe(string _recipeName, int _id, int _minCookTime, int _maxCookTime, List<int> _RandomIngredientList, int _recipeCompletionPoints)
+    public Recipe(string _recipeName, int _recipeID, int _minCookTime, int _maxCookTime, List<int> _ingredientIDs, int _recipeCompletionPoints)
     {
         recipeName = _recipeName;
-        id = _id;   
+        recipeID = _recipeID;   
         minCookTime = _minCookTime;
         maxCookTime = _maxCookTime;
-        RandomIngredientList = _RandomIngredientList;
+        ingredientIDs = _ingredientIDs;
         recipeCompletionPoints = _recipeCompletionPoints;
     }
 
