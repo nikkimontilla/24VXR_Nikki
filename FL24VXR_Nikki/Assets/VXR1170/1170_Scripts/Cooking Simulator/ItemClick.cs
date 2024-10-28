@@ -1,26 +1,50 @@
-using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
+using System.Net;
 using UnityEngine;
-using UnityEngine.Rendering;
 
 //This class controls player interaction
 public class ItemClick : MonoBehaviour
 {
-    
+    public int maxIngredients = 3;
 
+    private static int currentIngredientCount = 0;
+    private static List<GameObject> usedIngredients = new List<GameObject>();
+    private bool isSelected = false;
 
-    public void OnMouseDown()
+    private void OnMouseDown()
     {
-        Debug.Log ("yay");
+        if (!isSelected)
+        {
+            TrySelectIngredient();
+            Debug.Log("yes");
+        }
+        
     }
-    //clickCount func tracks the number of ingredients selected onto the pan; control the limit to 3
 
-    //OnMouseDown
+    private void TrySelectIngredient()
+    {
+        // Check if we can add more ingredients
+        if (currentIngredientCount >= maxIngredients)
+        {
+            Debug.Log($"Cannot add more ingredients! Maximum of {maxIngredients} reached.");
+            return;
+        }
 
-    // Start is called before the first frame update
-    void Start()
+        // Mark as selected and update tracking
+        isSelected = true;
+        currentIngredientCount++;
+        usedIngredients.Add(gameObject);
+
+    }
+}
+    
+//clickCount func tracks the number of ingredients selected onto the pan; control the limit to 3
+
+//OnMouseDown
+
+// Start is called before the first frame update
+/*void Start()
     {
        
     }
@@ -31,4 +55,4 @@ public class ItemClick : MonoBehaviour
       
         
     }
-}
+}*/

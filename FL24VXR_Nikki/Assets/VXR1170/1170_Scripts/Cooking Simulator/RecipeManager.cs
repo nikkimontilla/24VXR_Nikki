@@ -17,20 +17,6 @@ public class RecipeManager : MonoBehaviour //This class manages the game state, 
 
     public List<int> ingredientIDs = new List<int>() { 0, 1, 2, 3, 4 };
 
-    public List<int> RandomIngredientList()
-    {
-        List<int> availableIDs = new List<int>(ingredientIDs);
-
-        List<int> selectedIDs = new List<int>();
-
-        for (int i = 0; i < 4 && availableIDs.Count > 0; i++)
-        {
-
-        }
-
-        return selectedIDs;
-    }
-
     public Transform[] recipeSpawn;
 
     private bool gameStarted = false;
@@ -44,12 +30,12 @@ public class RecipeManager : MonoBehaviour //This class manages the game state, 
     [SerializeField]
     private PanLogic panLogic;
 
+
+
     // Start is called before the first frame update
     void Start()
     {
         
-    
-
         //Make ingredients options appear at start of game play by calling its list name
         //identify each ingredient (ingredientName, id, prefab, dollarValue)
         ingredients.Add(new Ingredient("Green Cube", 0, Resources.Load("Ingredients/GreenCube") as GameObject, 3));
@@ -60,10 +46,10 @@ public class RecipeManager : MonoBehaviour //This class manages the game state, 
 
         //Create random recipes using RandomIngredientList func
         //identify each recipe (recipeName, id, minCookTime, maxCookTime, a lists of ingredientIDs, and recipe completion value)
-        recipes.Add(new Recipe("Recipe 1", 0, 2, 6, RandomIngredientList(), 30));
-        recipes.Add(new Recipe("Recipe 2", 1, 2, 7, RandomIngredientList(), 40));
-        recipes.Add(new Recipe("Recipe 3", 2, 1, 5, RandomIngredientList(), 50));
-        recipes.Add(new Recipe("Recipe 4", 3, 1, 4, RandomIngredientList(), 60));
+        recipes.Add(new Recipe("Recipe 1", 0, 2, 6, RandomIngredientList(3), 30));
+        recipes.Add(new Recipe("Recipe 2", 1, 2, 7, RandomIngredientList(3), 40));
+        recipes.Add(new Recipe("Recipe 3", 2, 1, 5, RandomIngredientList(3), 50));
+        recipes.Add(new Recipe("Recipe 4", 3, 1, 4, RandomIngredientList(3), 60));
 
         //call spawn ingredient func
         SpawnIngredients();
@@ -72,7 +58,26 @@ public class RecipeManager : MonoBehaviour //This class manages the game state, 
         ChooseRecipe();
     }
 
+
+    public List<int> RandomIngredientList(int maxIngredients)
+    {
+        
+        List<int> tempList = new List<int>();
+
+        for (int i = 0; i < recipes.Count; i++)
+        {
+            tempList.Add(Random.Range(0, ingredients.Count - 1));
+        }
+
+        return tempList; ;
+    }
+
+
+
     //calc score
+
+
+
     public void SpawnIngredients()
     {
         //loop ingredient list
@@ -124,20 +129,26 @@ public void ChooseRecipe()
         {
 
         }
-
     }
-
-    
 
     public void clearConsole()
     {
-        ResetPan();
+        //destroy gameobjects to clear pan
+        Destroy(GameObject.Find("IngredientLoc1"));
+        Destroy(GameObject.Find("IngredientLoc2"));
+        Destroy(GameObject.Find("IngredientLoc3"));
+
+        for (int i = 0; i < recipeSpawn.Length; i++)
+        {
+            Destroy(recipeSpawn[i].GetChild(0).gameObject);
+        }
         usedIngedients.Clear();
+
     }
 
     private void ResetPan()
     {
-
+        
     }
 
     //public bool IsMatch(int recipeID, List<int> selectedIngredients)
