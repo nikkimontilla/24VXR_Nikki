@@ -1,58 +1,65 @@
 using System.Collections;
 using System.Collections.Generic;
-using System.Net;
 using UnityEngine;
 
-//This class controls player interaction
-public class ItemClick : MonoBehaviour
+public class ItemClick : MonoBehaviour //ItemClick for Cooking Simulator
 {
-    public int maxIngredients = 3;
-
-    private static int currentIngredientCount = 0;
-    private static List<GameObject> usedIngredients = new List<GameObject>();
-    private bool isSelected = false;
+    public static int clickCount = 0;
+    public Transform PanLoc1, PanLoc2, PanLoc3;
 
     private void OnMouseDown()
     {
-        if (!isSelected)
+
+        clickCount++;
+        Transform moveLoc;
+        GameObject tmp = Instantiate(this.gameObject);
+        Destroy(tmp.GetComponent<ItemClick>());
+
+        GameObject panLoc = GameObject.Find("PanLoc1");
+        if (panLoc != null)
         {
-            TrySelectIngredient();
-            Debug.Log("yes");
+            moveLoc = panLoc.transform;
         }
-        
-    }
-
-    private void TrySelectIngredient()
-    {
-        // Check if we can add more ingredients
-        if (currentIngredientCount >= maxIngredients)
+        else
         {
-            Debug.Log($"Cannot add more ingredients! Maximum of {maxIngredients} reached.");
-            return;
+            Debug.LogError("Cannot find object named PanLoc1");
         }
 
-        // Mark as selected and update tracking
-        isSelected = true;
-        currentIngredientCount++;
-        usedIngredients.Add(gameObject);
+        switch (clickCount) //switch cases are more efficient than if statement conditions
+        {
+            case 1:
+                tmp.name = "Pan Item 1";
+                moveLoc = GameObject.Find("PanLoc1").transform;
 
+                tmp.transform.position = moveLoc.position;
+                tmp.transform.rotation = moveLoc.transform.rotation;
+                tmp.transform.localScale = new Vector3(1f, 1f, 1f);
+
+                break;
+
+            case 2:
+                tmp.name = "Pan Item 2";
+                moveLoc = GameObject.Find("PanLoc2").transform;
+
+                tmp.transform.position = moveLoc.position;
+                tmp.transform.rotation = moveLoc.transform.rotation;
+                tmp.transform.localScale = new Vector3(1f, 1f, 1f); // you can change the values here to adjust scale
+
+                break;
+
+            case 3:
+                tmp.name = "Pan Item 3";
+                moveLoc = GameObject.Find("PanLoc3").transform;
+
+                tmp.transform.position = moveLoc.position;
+                tmp.transform.rotation = moveLoc.transform.rotation;
+                tmp.transform.localScale = new Vector3(1f, 1f, 1f);
+
+                clickCount = 0;
+                break;
+
+        }
     }
-}
     
-//clickCount func tracks the number of ingredients selected onto the pan; control the limit to 3
 
-//OnMouseDown
-
-// Start is called before the first frame update
-/*void Start()
-    {
-       
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-      
-        
-    }
-}*/
+}

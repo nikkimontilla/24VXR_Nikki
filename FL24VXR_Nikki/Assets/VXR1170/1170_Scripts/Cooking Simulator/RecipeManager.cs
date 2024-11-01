@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class RecipeManager : MonoBehaviour //This class manages the game state, calls ingredient class, randamizes recipes and checking if ingredients selected match recipe.
@@ -30,12 +31,10 @@ public class RecipeManager : MonoBehaviour //This class manages the game state, 
     [SerializeField]
     private PanLogic panLogic;
 
-
-
     // Start is called before the first frame update
     void Start()
     {
-        
+
         //Make ingredients options appear at start of game play by calling its list name
         //identify each ingredient (ingredientName, id, prefab, dollarValue)
         ingredients.Add(new Ingredient("Green Cube", 0, Resources.Load("Ingredients/GreenCube") as GameObject, 3));
@@ -52,13 +51,13 @@ public class RecipeManager : MonoBehaviour //This class manages the game state, 
         recipes.Add(new Recipe("Recipe 4", 3, 1, 4, RandomIngredientList(3), 60));
 
         //call spawn ingredient func
-        SpawnIngredients();
+        // SpawnIngredients();
 
         //call choose recipe func
         ChooseRecipe();
     }
 
-
+   
     public List<int> RandomIngredientList(int maxIngredients)
     {
         
@@ -78,7 +77,7 @@ public class RecipeManager : MonoBehaviour //This class manages the game state, 
 
 
 
-    public void SpawnIngredients()
+    /*public void SpawnIngredients()
     {
         //loop ingredient list
         for (int i = 0; i < ingredients.Count; i++)
@@ -93,7 +92,7 @@ public class RecipeManager : MonoBehaviour //This class manages the game state, 
 
         }
     }
-
+  */
     
 
 /*private void SpawnRecipe()
@@ -134,13 +133,13 @@ public void ChooseRecipe()
     public void clearConsole()
     {
         //destroy gameobjects to clear pan
-        Destroy(GameObject.Find("IngredientLoc1"));
-        Destroy(GameObject.Find("IngredientLoc2"));
-        Destroy(GameObject.Find("IngredientLoc3"));
+        Destroy(GameObject.Find("PanLoc1"));
+        Destroy(GameObject.Find("PanLoc2"));
+        Destroy(GameObject.Find("PanLoc3"));
 
         for (int i = 0; i < recipeSpawn.Length; i++)
         {
-            Destroy(recipeSpawn[i].GetChild(0).gameObject);
+            //Destroy(recipeSpawn[i].GetChild(0).gameObject);
         }
         usedIngedients.Clear();
 
@@ -152,8 +151,8 @@ public void ChooseRecipe()
     }
 
     //public bool IsMatch(int recipeID, List<int> selectedIngredients)
-    // {
-
+    // {ForEach (if thisrecipe.recipeID == Recipe.thisrecipe).recipes
+            
     // }
     // Update is called once per frame
     void Update()
