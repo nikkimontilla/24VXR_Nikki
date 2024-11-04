@@ -15,16 +15,6 @@ public class ItemClick : MonoBehaviour //ItemClick for Cooking Simulator
         GameObject tmp = Instantiate(this.gameObject);
         Destroy(tmp.GetComponent<ItemClick>());
 
-        GameObject panLoc = GameObject.Find("PanLoc1");
-        if (panLoc != null)
-        {
-            moveLoc = panLoc.transform;
-        }
-        else
-        {
-            Debug.LogError("Cannot find object named PanLoc1");
-        }
-
         switch (clickCount) //switch cases are more efficient than if statement conditions
         {
             case 1:

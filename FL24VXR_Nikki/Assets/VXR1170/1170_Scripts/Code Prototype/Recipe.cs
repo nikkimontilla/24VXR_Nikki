@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class Recipe
 {
+    internal static int maxIngredients;
+    internal readonly float markup;
+    internal readonly int id;
+
     //Create constructors by giving recipes a name, id, minCookTime, maxCookTime and a lists of ingredientIDs, recipe completion points
     //Call this Recipes class in the RecipeManager to create randomized recipes
 
@@ -11,7 +15,7 @@ public class Recipe
     public int recipeID;
     public int minCookTime;
     public int maxCookTime;
-    public List<int> ingredientIDs = new List<int>() { 0, 1, 2, 3, 4 };
+    public List<int> ingredientIDs = new List<int>();
     public int recipeCompletionPoints;
 
     public Recipe(string _recipeName, int _recipeID, int _minCookTime, int _maxCookTime, List<int> _ingredientIDs, int _recipeCompletionPoints)

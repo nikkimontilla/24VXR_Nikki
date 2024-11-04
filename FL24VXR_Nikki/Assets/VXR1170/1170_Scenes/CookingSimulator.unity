@@ -274,30 +274,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db30380f8f07a3540b30d51a2f61805b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  recipeManager: {fileID: 0}
-  timerValue: 30
+  recipeManager: {fileID: 1003199678}
+  scoreText: {fileID: 489265213}
   timerText: {fileID: 1458909532}
---- !u!1 &221799290 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4887077299454186987, guid: 660db8636b743a84991585c4f1e7c6b0,
-    type: 3}
-  m_PrefabInstance: {fileID: 1733008440}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &221799291
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 221799290}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b5c42bebc8609e34bb131eed3b1c3f78, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PanLoc1: {fileID: 0}
-  PanLoc2: {fileID: 0}
-  PanLoc3: {fileID: 0}
+  timerValue: 30
 --- !u!1001 &297701266
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -306,6 +286,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3146970254757422175, guid: 099b645f4472faf428da5f78af441704,
+        type: 3}
+      propertyPath: PanLoc1
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3146970254757422175, guid: 099b645f4472faf428da5f78af441704,
+        type: 3}
+      propertyPath: PanLoc2
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3146970254757422175, guid: 099b645f4472faf428da5f78af441704,
+        type: 3}
+      propertyPath: PanLoc3
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 4602891505114956965, guid: 099b645f4472faf428da5f78af441704,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -369,33 +364,8 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 7164118149048818691, guid: 099b645f4472faf428da5f78af441704,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 788901457}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 099b645f4472faf428da5f78af441704, type: 3}
---- !u!1 &336874166 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4872767921612464258, guid: 43aad83a17a172545b7d9e40e05fd86c,
-    type: 3}
-  m_PrefabInstance: {fileID: 1268819907}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &336874167
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 336874166}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b5c42bebc8609e34bb131eed3b1c3f78, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PanLoc1: {fileID: 0}
-  PanLoc2: {fileID: 0}
-  PanLoc3: {fileID: 0}
 --- !u!1001 &449337091
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -459,6 +429,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8468608278689324624, guid: f065c6bbf49749b45b1971002f818b1a,
+        type: 3}
+      propertyPath: PanLoc1
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8468608278689324624, guid: f065c6bbf49749b45b1971002f818b1a,
+        type: 3}
+      propertyPath: PanLoc2
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8468608278689324624, guid: f065c6bbf49749b45b1971002f818b1a,
+        type: 3}
+      propertyPath: PanLoc3
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 9144858416779722166, guid: f065c6bbf49749b45b1971002f818b1a,
         type: 3}
       propertyPath: m_Enabled
@@ -467,11 +452,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 2033478627761179631, guid: f065c6bbf49749b45b1971002f818b1a,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1907591438}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f065c6bbf49749b45b1971002f818b1a, type: 3}
 --- !u!1 &489265211
 GameObject:
@@ -617,6 +598,7 @@ GameObject:
   m_Component:
   - component: {fileID: 651762677}
   - component: {fileID: 651762678}
+  - component: {fileID: 651762679}
   m_Layer: 0
   m_Name: RecipeLoc1
   m_TagString: Untagged
@@ -639,50 +621,70 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &651762678
-MonoBehaviour:
+--- !u!23 &651762678
+MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 651762676}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 02a15429279066b4c90bb6ce18c12b99, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  usedIngedients: 
-  ingredientIDs: 0000000001000000020000000300000004000000
-  recipeSpawn:
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
   - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  chosenRecipeID: 0
-  earnings: 0
-  panLogic: {fileID: 0}
---- !u!1 &788901456 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7164118149048818691, guid: 099b645f4472faf428da5f78af441704,
-    type: 3}
-  m_PrefabInstance: {fileID: 297701266}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &788901457
-MonoBehaviour:
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &651762679
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 788901456}
+  m_GameObject: {fileID: 651762676}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b5c42bebc8609e34bb131eed3b1c3f78, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PanLoc1: {fileID: 0}
-  PanLoc2: {fileID: 0}
-  PanLoc3: {fileID: 0}
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &906818404
 GameObject:
   m_ObjectHideFlags: 0
@@ -828,6 +830,7 @@ GameObject:
   - component: {fileID: 1003199675}
   - component: {fileID: 1003199676}
   - component: {fileID: 1003199677}
+  - component: {fileID: 1003199678}
   m_Layer: 0
   m_Name: RecipeManager
   m_TagString: Untagged
@@ -862,9 +865,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db30380f8f07a3540b30d51a2f61805b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  recipeManager: {fileID: 0}
-  timerValue: 30
+  recipeManager: {fileID: 1003199678}
+  scoreText: {fileID: 489265213}
   timerText: {fileID: 1458909532}
+  timerValue: 30
 --- !u!114 &1003199677
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -880,27 +884,26 @@ MonoBehaviour:
   PanLoc1: {fileID: 0}
   PanLoc2: {fileID: 0}
   PanLoc3: {fileID: 0}
---- !u!1 &1063501725 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4920535552585778916, guid: adf7a50772a33fa47ba2b093f6d8af6b,
-    type: 3}
-  m_PrefabInstance: {fileID: 1834187295}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1063501726
+--- !u!114 &1003199678
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1063501725}
+  m_GameObject: {fileID: 1003199674}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b5c42bebc8609e34bb131eed3b1c3f78, type: 3}
+  m_Script: {fileID: 11500000, guid: 02a15429279066b4c90bb6ce18c12b99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PanLoc1: {fileID: 0}
-  PanLoc2: {fileID: 0}
-  PanLoc3: {fileID: 0}
+  usedIngredients: 000000000000000000000000
+  recipeSpawn:
+  - {fileID: 651762677}
+  - {fileID: 1284369098}
+  - {fileID: 1284643328}
+  chosenRecipeID: 0
+  panLogic: {fileID: 1003199676}
+  earnings: 0
 --- !u!1 &1093151744
 GameObject:
   m_ObjectHideFlags: 0
@@ -1125,6 +1128,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3135326263509789938, guid: 43aad83a17a172545b7d9e40e05fd86c,
+        type: 3}
+      propertyPath: PanLoc1
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3135326263509789938, guid: 43aad83a17a172545b7d9e40e05fd86c,
+        type: 3}
+      propertyPath: PanLoc2
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3135326263509789938, guid: 43aad83a17a172545b7d9e40e05fd86c,
+        type: 3}
+      propertyPath: PanLoc3
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 4872767921612464258, guid: 43aad83a17a172545b7d9e40e05fd86c,
         type: 3}
       propertyPath: m_Name
@@ -1138,11 +1156,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 4872767921612464258, guid: 43aad83a17a172545b7d9e40e05fd86c,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 336874167}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 43aad83a17a172545b7d9e40e05fd86c, type: 3}
 --- !u!1 &1284369097
 GameObject:
@@ -1154,6 +1168,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1284369098}
   - component: {fileID: 1284369099}
+  - component: {fileID: 1284369100}
   m_Layer: 0
   m_Name: RecipeLoc2
   m_TagString: Untagged
@@ -1176,29 +1191,70 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1284369099
-MonoBehaviour:
+--- !u!23 &1284369099
+MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1284369097}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 02a15429279066b4c90bb6ce18c12b99, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  usedIngedients: 
-  ingredientIDs: 0000000001000000020000000300000004000000
-  recipeSpawn:
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
   - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  chosenRecipeID: 0
-  earnings: 0
-  panLogic: {fileID: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1284369100
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1284369097}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &1284643327
 GameObject:
   m_ObjectHideFlags: 0
@@ -1209,6 +1265,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1284643328}
   - component: {fileID: 1284643329}
+  - component: {fileID: 1284643330}
   m_Layer: 0
   m_Name: RecipeLoc3
   m_TagString: Untagged
@@ -1231,29 +1288,70 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1284643329
-MonoBehaviour:
+--- !u!23 &1284643329
+MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1284643327}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 02a15429279066b4c90bb6ce18c12b99, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  usedIngedients: 
-  ingredientIDs: 0000000001000000020000000300000004000000
-  recipeSpawn:
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
   - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  chosenRecipeID: 0
-  earnings: 0
-  panLogic: {fileID: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1284643330
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1284643327}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &1458909530
 GameObject:
   m_ObjectHideFlags: 0
@@ -1543,7 +1641,7 @@ Transform:
   m_GameObject: {fileID: 1724044078}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalPosition: {x: 0, y: 1, z: -16.85}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1661,14 +1759,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: GreenCube
       objectReference: {fileID: 0}
+    - target: {fileID: 7895734597272807251, guid: 660db8636b743a84991585c4f1e7c6b0,
+        type: 3}
+      propertyPath: PanLoc1
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7895734597272807251, guid: 660db8636b743a84991585c4f1e7c6b0,
+        type: 3}
+      propertyPath: PanLoc2
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7895734597272807251, guid: 660db8636b743a84991585c4f1e7c6b0,
+        type: 3}
+      propertyPath: PanLoc3
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 4887077299454186987, guid: 660db8636b743a84991585c4f1e7c6b0,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 221799291}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 660db8636b743a84991585c4f1e7c6b0, type: 3}
 --- !u!1 &1760867123
 GameObject:
@@ -1759,7 +1868,7 @@ Transform:
   m_GameObject: {fileID: 1760867123}
   serializedVersion: 2
   m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
-  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalPosition: {x: 0, y: 8.7, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1796,6 +1905,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 301675443568813282, guid: adf7a50772a33fa47ba2b093f6d8af6b,
+        type: 3}
+      propertyPath: PanLoc1
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 301675443568813282, guid: adf7a50772a33fa47ba2b093f6d8af6b,
+        type: 3}
+      propertyPath: PanLoc2
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 301675443568813282, guid: adf7a50772a33fa47ba2b093f6d8af6b,
+        type: 3}
+      propertyPath: PanLoc3
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 4427632209651201017, guid: adf7a50772a33fa47ba2b093f6d8af6b,
         type: 3}
       propertyPath: m_Enabled
@@ -1859,33 +1983,8 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 4920535552585778916, guid: adf7a50772a33fa47ba2b093f6d8af6b,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1063501726}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: adf7a50772a33fa47ba2b093f6d8af6b, type: 3}
---- !u!1 &1907591437 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2033478627761179631, guid: f065c6bbf49749b45b1971002f818b1a,
-    type: 3}
-  m_PrefabInstance: {fileID: 449337091}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1907591438
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1907591437}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b5c42bebc8609e34bb131eed3b1c3f78, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PanLoc1: {fileID: 0}
-  PanLoc2: {fileID: 0}
-  PanLoc3: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -1901,8 +2000,8 @@ SceneRoots:
   - {fileID: 66982158}
   - {fileID: 1733008440}
   - {fileID: 297701266}
-  - {fileID: 1268819907}
   - {fileID: 449337091}
+  - {fileID: 1268819907}
   - {fileID: 1834187295}
   - {fileID: 651762677}
   - {fileID: 1284369098}
