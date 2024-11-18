@@ -8,6 +8,27 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/FinalProject/Scenes/MainMenu.unity
+    guid: f60e0e3d46a53044b860b95984855943
+  - enabled: 1
+    path: Assets/FinalProject/Scenes/SoundBasics.unity
+    guid: afa438422ea96a646bf83f49ec71c059
+  - enabled: 1
+    path: Assets/FinalProject/Scenes/SoundBehaviours.unity
+    guid: a1e419cf157f1a14cbd6578e7ee3bd79
+  - enabled: 1
+    path: Assets/FinalProject/Scenes/SoundLayers.unity
+    guid: e474ba3586f98c246b0b0776abba6697
+  - enabled: 1
+    path: Assets/FinalProject/Scenes/Doppler Effect.unity
+    guid: 7c07d26a3f1a2314bbe0eacbd98082b4
+  - enabled: 1
+    path: Assets/FinalProject/Scenes/MusicAndTheBrain.unity
+    guid: 609ddf70764232e4b87fb83e331c396a
+  - enabled: 1
+    path: Assets/FinalProject/Scenes/SoundsAndEars.unity
+    guid: bfe1c5b4f8918f74d88569a439925606
   m_configObjects:
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: a54bb40fc0060074c9495c4ef3d39395,
       type: 2}
