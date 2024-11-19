@@ -21,7 +21,7 @@ EditorBuildSettings:
     path: Assets/FinalProject/Scenes/SoundLayers.unity
     guid: e474ba3586f98c246b0b0776abba6697
   - enabled: 1
-    path: Assets/FinalProject/Scenes/Doppler Effect.unity
+    path: Assets/FinalProject/Scenes/DopplerEffect.unity
     guid: 7c07d26a3f1a2314bbe0eacbd98082b4
   - enabled: 1
     path: Assets/FinalProject/Scenes/MusicAndTheBrain.unity
