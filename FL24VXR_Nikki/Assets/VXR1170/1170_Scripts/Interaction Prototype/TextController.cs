@@ -11,14 +11,4 @@ public class TextController : MonoBehaviour
     {
         text.SetActive(false);
     }
-
-    public void OnMouseOver()
-    {
-        text.SetActive(true);
-    }
-
-    public void OnMouseExit()
-    {
-        text.SetActive(false);
-    }
 }
