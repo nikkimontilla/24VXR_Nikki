@@ -7,32 +7,37 @@ public class mainMenu : MonoBehaviour
 {
     public void soundBasics()
     {
-        SceneManager.LoadScene("SoundBasics");
+        StartCoroutine(LoadSceneWithDelay("SoundBasics"));
     }
 
     public void soundBehaviours()
     {
-        SceneManager.LoadScene("SoundBehaviours");
+        StartCoroutine(LoadSceneWithDelay("SoundBehaviours"));
     }
 
     public void soundAndEars()
     {
-        SceneManager.LoadScene("SoundsAndEars");
+        StartCoroutine(LoadSceneWithDelay("SoundsAndEars"));
     }
 
     public void dopplerEffect()
     {
-        SceneManager.LoadScene("DopplerEffect");
+        StartCoroutine(LoadSceneWithDelay("DopplerEffect"));
     }
 
     public void soundLayers()
     {
-        SceneManager.LoadScene("SoundLayers");
+        StartCoroutine(LoadSceneWithDelay("SoundLayers"));
     }
 
     public void musicAndTheBrain()
     {
-        SceneManager.LoadScene("MusicAndTheBrain");
+        StartCoroutine(LoadSceneWithDelay("MusicAndTheBrain"));
     }
 
+    private IEnumerator LoadSceneWithDelay(string sceneName)
+    {
+        yield return new WaitForSeconds(0.5f);
+        SceneManager.LoadScene(sceneName);
+    }
 }
