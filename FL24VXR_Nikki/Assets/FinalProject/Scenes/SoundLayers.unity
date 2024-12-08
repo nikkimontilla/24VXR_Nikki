@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.31280705, g: 0.62881744, b: 0.8583645, a: 1}
+  m_IndirectSpecularColor: {r: 0.31304404, g: 0.6290074, b: 0.85835063, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -5762,6 +5762,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1093386377}
   - component: {fileID: 1093386376}
+  - component: {fileID: 1093386378}
   m_Layer: 0
   m_Name: Manager
   m_TagString: Untagged
@@ -5797,6 +5798,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1093386378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1093386375}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fabde05add9c184e951d7cfb3facb85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  platformCenter: {fileID: 1815905849}
+  maxAllowedDistance: 2.5
+  continuousMoveProvider: {fileID: 1603216213}
+  xrOrigin: {fileID: 1896619474}
 --- !u!4 &1093401483 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 98f8125a3ab93ed4eb237eea8dea9b67,
@@ -12351,7 +12368,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Timeout: 10
-  m_XROrigin: {fileID: 0}
+  m_XROrigin: {fileID: 1896619473}
 --- !u!1 &1967293419
 GameObject:
   m_ObjectHideFlags: 0
@@ -13038,6 +13055,7 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 1896619474}
+  - {fileID: 1093386377}
   - {fileID: 471054251}
   - {fileID: 1815905849}
   - {fileID: 1225397156}
@@ -13049,4 +13067,3 @@ SceneRoots:
   - {fileID: 520825228}
   - {fileID: 1142838395}
   - {fileID: 1527392686}
-  - {fileID: 1093386377}
