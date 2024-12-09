@@ -1,82 +1,73 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class brainAnnotations : MonoBehaviour
 {
-    [System.Serializable]
-    public class Annotation
+    public GameObject sensoryCortexCanvas;
+    public GameObject motorCortexCanvas;
+    public GameObject prefrontalCortexCanvas;
+    public GameObject visualCortexCanvas;
+    public GameObject auditoryCortexCanvas;
+
+    public void Start()
     {
-        public string title;
-        public string description;
-        public Vector3 localPosition; // Changed to local position
-        public GameObject annotationObject;
+        sensoryCortexCanvas.SetActive(false);
+        motorCortexCanvas.SetActive(false);
+        prefrontalCortexCanvas.SetActive(false);
+        visualCortexCanvas.SetActive(false);
+        auditoryCortexCanvas.SetActive(false);
+
     }
 
-    [Header("Annotation Settings")]
-    public List<Annotation> annotations = new List<Annotation>();
-
-    [Header("Prefab References")]
-    public GameObject annotationPrefab;
-
-    private void Start()
+    // Method to be called when Sensory C
+    public void sensoryCortexCanvasAppear()
     {
-        CreateAnnotations();
+        sensoryCortexCanvas.SetActive(true);
+
+        motorCortexCanvas.SetActive(false);
+        prefrontalCortexCanvas.SetActive(false);
+        visualCortexCanvas.SetActive(false);
+        auditoryCortexCanvas.SetActive(false);
     }
 
-    public void CreateAnnotations()
+    public void motorCortexCanvasAppear()
     {
-        // Clear existing annotations
-        foreach (var annotation in annotations)
-        {
-            if (annotation.annotationObject != null)
-            {
-                Destroy(annotation.annotationObject);
-            }
-        }
-        annotations.Clear();
+        motorCortexCanvas.SetActive(true);
 
-        // Add some sample annotations
-        AddAnnotation("Sample Point 1", "First annotation description", new Vector3(0.5f, 0.5f, 0));
-        AddAnnotation("Sample Point 2", "Second annotation description", new Vector3(-0.5f, 0.5f, 0));
+        sensoryCortexCanvas.SetActive(false);
+        prefrontalCortexCanvas.SetActive(false);
+        visualCortexCanvas.SetActive(false);
+        auditoryCortexCanvas.SetActive(false);
     }
 
-    public void AddAnnotation(string title, string description, Vector3 localPosition)
+    public void prefrontCortexCanvasAppear()
     {
-        // Instantiate annotation as a child of this object
-        GameObject newAnnotationObj = Instantiate(annotationPrefab, transform);
+        prefrontalCortexCanvas.SetActive(true);
 
-        // Position the annotation locally
-        newAnnotationObj.transform.localPosition = localPosition;
-
-        // Set up text components
-        Text titleText = newAnnotationObj.transform.Find("TitleText")?.GetComponent<Text>();
-        Text descriptionText = newAnnotationObj.transform.Find("DescriptionText")?.GetComponent<Text>();
-
-        if (titleText != null)
-            titleText.text = title;
-        if (descriptionText != null)
-            descriptionText.text = description;
-
-        // Create annotation object and store
-        Annotation annotation = new Annotation
-        {
-            title = title,
-            description = description,
-            localPosition = localPosition,
-            annotationObject = newAnnotationObj
-        };
-
-        annotations.Add(annotation);
+        motorCortexCanvas.SetActive(false);
+        sensoryCortexCanvas.SetActive(false);
+        visualCortexCanvas.SetActive(false);
+        auditoryCortexCanvas.SetActive(false);
     }
 
-    public void RemoveAnnotation(int index)
+    public void visualCortexCanvasAppear()
     {
-        if (index >= 0 && index < annotations.Count)
-        {
-            Destroy(annotations[index].annotationObject);
-            annotations.RemoveAt(index);
-        }
+        visualCortexCanvas.SetActive(true);
+
+        prefrontalCortexCanvas.SetActive(false);
+        motorCortexCanvas.SetActive(false);
+        sensoryCortexCanvas.SetActive(false);
+        auditoryCortexCanvas.SetActive(false);
+    }
+
+    public void auditoryCortexCanvasAppear()
+    {
+        auditoryCortexCanvas.SetActive(true);
+
+        visualCortexCanvas.SetActive(false);
+        prefrontalCortexCanvas.SetActive(false);
+        motorCortexCanvas.SetActive(false);
+        sensoryCortexCanvas.SetActive(false);
     }
 }

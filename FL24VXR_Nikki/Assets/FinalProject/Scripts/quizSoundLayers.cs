@@ -45,6 +45,7 @@ public class quizSoundLayers : MonoBehaviour
         }
     }
 
+    //Method to be called when wrong button is clicked
     public void wrongCanvasAppear()
     {
         if (quizSoundLayersCanvas != null && correctAnswerCanvas != null && wrongAnswerCanvas != null)
@@ -55,6 +56,7 @@ public class quizSoundLayers : MonoBehaviour
         }
     }
 
+    // Method to return to original scene
     public void coolAppear()
     {
         soundLayersCanvas.SetActive(true);
@@ -64,6 +66,7 @@ public class quizSoundLayers : MonoBehaviour
         wrongAnswerCanvas.SetActive(false);
     }
 
+    //Method to make question reappear
     public void tryAgainAppear()
     {
         questionCanvasAppear();
