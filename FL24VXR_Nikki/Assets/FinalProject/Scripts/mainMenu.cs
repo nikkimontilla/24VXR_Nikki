@@ -5,6 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class mainMenu : MonoBehaviour
 {
+    public void home()
+    {
+        StartCoroutine(LoadSceneWithDelay("Home"));
+    }
+
     public void soundBasics()
     {
         StartCoroutine(LoadSceneWithDelay("SoundBasics"));
