@@ -71,5 +71,10 @@ public class quizSoundLayers : MonoBehaviour
     {
         questionCanvasAppear();
     }
+
+    public void exitButton()
+    {
+        coolAppear();
+    }
    
 }
