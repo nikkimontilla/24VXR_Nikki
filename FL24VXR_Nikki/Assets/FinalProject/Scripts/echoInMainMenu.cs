@@ -33,9 +33,5 @@ public class echoInMainMenu : MonoBehaviour
         }
     }
 
-    // Optional: Reset method if you want to allow replay in a new game session
-    public void ResetAudioPlay()
-    {
-        hasBeenPlayed = false;
-    }
+    
 }

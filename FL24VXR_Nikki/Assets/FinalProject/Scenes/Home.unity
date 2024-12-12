@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.1285304, g: 0.04223284, b: 0.07254939, a: 1}
+  m_IndirectSpecularColor: {r: 0.12851113, g: 0.042189945, b: 0.07252114, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3267,11 +3267,11 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1816830731}
-  - {fileID: 2039716003}
   - {fileID: 1279827789}
-  - {fileID: 1773513966}
   - {fileID: 598478400}
   - {fileID: 1355761355}
+  - {fileID: 1773513966}
+  - {fileID: 2039716003}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -4074,6 +4074,7 @@ GameObject:
   - component: {fileID: 1288465812}
   - component: {fileID: 1288465814}
   - component: {fileID: 1288465815}
+  - component: {fileID: 1288465816}
   m_Layer: 0
   m_Name: Manager
   m_TagString: Untagged
@@ -4138,6 +4139,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioClip: {fileID: 8300000, guid: 355d242714531e746bab87505fe33b27, type: 3}
+--- !u!114 &1288465816
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1288465811}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3398600ba67228419a2ac1ef9764bcf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttons:
+  - {fileID: 1816830732}
+  - {fileID: 1279827790}
+  - {fileID: 598478401}
+  - {fileID: 1355761356}
+  - {fileID: 1773513967}
+  - {fileID: 2039716004}
+  timeBetweenButtons: 0.25
+  useAnimation: 1
 --- !u!1 &1355761354
 GameObject:
   m_ObjectHideFlags: 0
