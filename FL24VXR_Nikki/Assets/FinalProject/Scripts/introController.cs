@@ -9,6 +9,8 @@ public class IntroController : MonoBehaviour
     public float timeBetweenLogos = 1f;
     public float fadeTime = 0.5f;
 
+    public AudioSource logoTune;
+
     void Start()
     {
         // Initially hide all logos
@@ -19,6 +21,7 @@ public class IntroController : MonoBehaviour
 
         // Start the sequential reveal
         StartCoroutine(RevealLogosSequentially());
+        logoTune.Play();
     }
 
     IEnumerator RevealLogosSequentially()
@@ -27,8 +30,11 @@ public class IntroController : MonoBehaviour
         {
             Image currentLogo = logos[i];
 
+            yield return new WaitForSeconds(timeBetweenLogos);
+
             // Fade in current logo
             yield return StartCoroutine(FadeLogo(currentLogo, true));
+            
 
             // Wait before next transition
             yield return new WaitForSeconds(timeBetweenLogos);
