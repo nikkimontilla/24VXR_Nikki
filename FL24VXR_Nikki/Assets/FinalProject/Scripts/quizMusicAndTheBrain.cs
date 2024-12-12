@@ -23,7 +23,7 @@ public class quizMusicAndTheBrain : MonoBehaviour
         quizMusicAndTheBrainCanvas.SetActive(false);
         correctAnswerCanvas.SetActive(false);
         wrongAnswerCanvas.SetActive(false);
-        buttonCanvas.SetActive(true);
+        buttonCanvas.SetActive(false);
     }
 
     // Method to be called when the quiz button is clicked
