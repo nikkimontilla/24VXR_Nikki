@@ -13,7 +13,7 @@ public class quizDopplerEffect : MonoBehaviour
 
     public void Start()
     {
-        // Ensure quizSoundLayersCanvas is hidden at the start
+        // Ensure canvases is hidden at the start
         quizDopplerEffectCanvas.SetActive(false);   
         correctAnswerCanvas.SetActive(false);
         wrongAnswerCanvas.SetActive(false);
@@ -31,7 +31,7 @@ public class quizDopplerEffect : MonoBehaviour
             correctAnswerCanvas.SetActive(false);
             wrongAnswerCanvas.SetActive(false);
 
-            // Show the quizSoundLayersCanvas
+            // Show the quiz canvas
             quizDopplerEffectCanvas.SetActive(true);
         }
     }

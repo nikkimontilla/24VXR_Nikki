@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class IntroController : MonoBehaviour
 {
-    public Image[] logos; // Drag logos here in inspector
+    public Image[] logos; 
     public float timeBetweenLogos = 1f;
     public float fadeTime = 0.5f;
 
@@ -39,7 +39,7 @@ public class IntroController : MonoBehaviour
             // Wait before next transition
             yield return new WaitForSeconds(timeBetweenLogos);
 
-            // If not the last logo, fade out current logo
+            // Fade out current logo
             if (i < logos.Length - 1)
             {
                 yield return StartCoroutine(FadeLogo(currentLogo, false));

@@ -5,16 +5,16 @@ using UnityEngine.UI;
 
 public class ambulanceSlider : MonoBehaviour
 { 
-    // Reference to the slider in the UI
+    // Reference to the slider
     public Slider positionSlider;
 
-    // Reference to the game object you want to move
-    public Transform objectToMove;
+    // Reference to the ambulance
+    public Transform ambulance;
 
     // Reference to the AudioSource for Doppler and Volume control
     public AudioSource audioSourceToControl;
 
-    // Minimum and maximum X positions for the object
+    // Minimum and maximum X positions for the ambulance
     public float minXPosition = -5f;
     public float maxXPosition = 5f;
 
@@ -27,13 +27,7 @@ public class ambulanceSlider : MonoBehaviour
     public float maxVolume = 1f;
 
     void Start()
-    {
-        // Check if required references are assigned
-        if (positionSlider == null || objectToMove == null)
-        {
-            Debug.LogError("Slider or Object to move is not assigned!");
-            return;
-        }
+    { 
 
         // Set up the slider's range between 0 and 1
         positionSlider.minValue = 0f;
@@ -52,13 +46,13 @@ public class ambulanceSlider : MonoBehaviour
         float newXPosition = Mathf.Lerp(minXPosition, maxXPosition, sliderValue);
 
         // Create new position vector
-        Vector3 newPosition = objectToMove.position;
+        Vector3 newPosition = ambulance.position;
         newPosition.x = newXPosition;
 
-        // Apply new position to the object
-        objectToMove.position = newPosition;
+        // Apply new position
+        ambulance.position = newPosition;
 
-        // Modify audio if AudioSource is assigned
+        // Modify audio
         if (audioSourceToControl != null)
         {
             // Adjusted volume calculation

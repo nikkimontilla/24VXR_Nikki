@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 public class mainMenuAnimation : MonoBehaviour
 {
-    public Button[] buttons; // Drag buttons here in inspector
+    public Button[] buttons; 
     public float timeBetweenButtons = 1f; // Time between button appearances
     public bool useAnimation = true;
     void Start()
@@ -21,12 +21,12 @@ public class mainMenuAnimation : MonoBehaviour
     {
         foreach (Button btn in buttons)
         {
-            // Option 1: Simple Active/Inactive method
+            // Simple Active/Inactive method
             if (!useAnimation)
             {
                 btn.gameObject.SetActive(true);
             }
-            // Option 2: Fade-in method with animation
+            // Fade-in method with animation
             else
             {
                 CanvasGroup canvasGroup = btn.gameObject.GetComponent<CanvasGroup>();

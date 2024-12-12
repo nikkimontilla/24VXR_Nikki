@@ -6233,7 +6233,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   positionSlider: {fileID: 1758961924}
-  objectToMove: {fileID: 523130059}
+  ambulance: {fileID: 0}
   audioSourceToControl: {fileID: 523130056}
   minXPosition: -9.72
   maxXPosition: 7.98
@@ -12788,7 +12788,7 @@ Transform:
   m_GameObject: {fileID: 1272031307}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.91, y: 1.44, z: 3.11}
+  m_LocalPosition: {x: 0, y: 13.32, z: 16.29}
   m_LocalScale: {x: 100.000046, y: 100.000015, z: 100.00003}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -17548,7 +17548,19 @@ MonoBehaviour:
   m_Value: 0.5
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 523130055}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1001 &1790853934
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19796,6 +19808,7 @@ GameObject:
   - component: {fileID: 2085880869}
   - component: {fileID: 2085880870}
   - component: {fileID: 2085880871}
+  - component: {fileID: 2085880872}
   m_Layer: 0
   m_Name: Manager
   m_TagString: Untagged
@@ -19815,7 +19828,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a4717c4af2ab75438a425e4cf4b38dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skySpeed: 1
+  skySpeed: 0.5
 --- !u!4 &2085880868
 Transform:
   m_ObjectHideFlags: 0
@@ -19883,6 +19896,27 @@ MonoBehaviour:
   ambulanceSound: {fileID: 523130056}
   dopplerEffectIntroNarrative: {fileID: 1621267143}
   targetLocation: {fileID: 1272031308}
+--- !u!114 &2085880872
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2085880866}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1760dff93bf6a843a07aedb1328af9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  positionSlider: {fileID: 1758961924}
+  ambulance: {fileID: 523130059}
+  audioSourceToControl: {fileID: 523130056}
+  minXPosition: -9.64
+  maxXPosition: 7.46
+  minDopplerLevel: 1
+  maxDopplerLevel: 3
+  minVolume: 0.5
+  maxVolume: 1
 --- !u!1001 &2111293707
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class echoInMainMenu : MonoBehaviour
 {
-    public AudioClip audioClip; // Drag your audio clip here in the inspector
+    public AudioClip audioClip; 
     private AudioSource audioSource;
 
     // Static variable to track if the audio has been played across scene reloads
@@ -12,14 +12,13 @@ public class echoInMainMenu : MonoBehaviour
 
     void Awake()
     {
-        // Ensure we only have one AudioSource component
         audioSource = GetComponent<AudioSource>();
         if (audioSource == null)
         {
             audioSource = gameObject.AddComponent<AudioSource>();
         }
 
-        // Set the audio clip if not already set in the inspector
+        // Set the audio clip
         if (audioSource.clip == null && audioClip != null)
         {
             audioSource.clip = audioClip;

@@ -19,7 +19,7 @@ public class quizMusicAndTheBrain : MonoBehaviour
 
     public void Start()
     {
-        // Ensure quizSoundLayersCanvas is hidden at the start
+        // Ensure canvases is hidden at the start
         quizMusicAndTheBrainCanvas.SetActive(false);
         correctAnswerCanvas.SetActive(false);
         wrongAnswerCanvas.SetActive(false);
@@ -43,7 +43,7 @@ public class quizMusicAndTheBrain : MonoBehaviour
             auditoryCortexCanvas.SetActive(false);
             buttonCanvas.SetActive(false);
 
-            // Show the quizSoundLayersCanvas
+            // Show the quiz canvas
             quizMusicAndTheBrainCanvas.SetActive(true);
         }
     }

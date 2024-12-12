@@ -24,7 +24,7 @@ public class brainAnnotations : MonoBehaviour
 
     }
 
-    // Method to be called when Sensory C
+    // Method to be called when Sensory Cortex button to clicked
     public void sensoryCortexCanvasAppear()
     {
         sensoryCortexCanvas.SetActive(true);
@@ -35,6 +35,7 @@ public class brainAnnotations : MonoBehaviour
         auditoryCortexCanvas.SetActive(false);
     }
 
+    // Method to be called when Motor Cortex button to clicked
     public void motorCortexCanvasAppear()
     {
         motorCortexCanvas.SetActive(true);
@@ -45,6 +46,7 @@ public class brainAnnotations : MonoBehaviour
         auditoryCortexCanvas.SetActive(false);
     }
 
+    // Method to be called when Prefrontal Cortex button to clicked
     public void prefrontCortexCanvasAppear()
     {
         prefrontalCortexCanvas.SetActive(true);
@@ -55,6 +57,7 @@ public class brainAnnotations : MonoBehaviour
         auditoryCortexCanvas.SetActive(false);
     }
 
+    // Method to be called when Visual Cortex button to clicked
     public void visualCortexCanvasAppear()
     {
         visualCortexCanvas.SetActive(true);
@@ -65,6 +68,7 @@ public class brainAnnotations : MonoBehaviour
         auditoryCortexCanvas.SetActive(false);
     }
 
+    // Method to be called when Auditory Cortex button to clicked
     public void auditoryCortexCanvasAppear()
     {
         auditoryCortexCanvas.SetActive(true);
@@ -75,6 +79,7 @@ public class brainAnnotations : MonoBehaviour
         sensoryCortexCanvas.SetActive(false);
     }
 
+    // Method to avoid overlapping audio as different buttons are clicked 
     public void PlayButtonAudio(AudioSource audioSourceToPlay)
     {
         // If there's an audio currently playing, stop it
@@ -88,15 +93,5 @@ public class brainAnnotations : MonoBehaviour
 
         // Update the currently playing audio reference
         currentlyPlayingAudio = audioSourceToPlay;
-    }
-
-    // Optional: Method to stop all audio
-    public void StopAllAudio()
-    {
-        if (currentlyPlayingAudio != null)
-        {
-            currentlyPlayingAudio.Stop();
-            currentlyPlayingAudio = null;
-        }
     }
 }
